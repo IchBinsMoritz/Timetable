@@ -6,6 +6,7 @@ import time
 free = "Freistunde"
 over = "frei"
 brk = "Pause"
+after = "Danach hast du "
 #monday
 mon1 = "Sport in Halle 2"
 mon2 = "Sport in Halle 2"
@@ -53,7 +54,7 @@ fri8 = "Musik in A010M"
 fri9 = "Geschichte in I101"
 
 now = "Du hast jetzt "
-nxt = "Gleich hast du  "
+nxt = "Gleich hast du "
 day = time.strftime('%a', time.localtime())
 time = time.strftime('%H.%M', time.localtime())
 
@@ -69,6 +70,7 @@ if day == "Mon" and float(time) > 8.00 and float(time) < 8.51 :
 if day == "Mon" and float(time) > 8.50 and float(time) < 9.36 :
     print(now + mon2)
     print(nxt + brk)
+    print(after + mon3)
 
 if day == "Mon" and float(time) > 9.35 and float(time) < 9.56 :
     print(now + brk)
@@ -81,6 +83,7 @@ if day == "Mon" and float(time) > 9.55 and float(time) < 10.46 :
 if day == "Mon" and float(time) > 10.45 and float(time) < 11.31 :
     print(now + mon4)
     print(nxt + brk)
+    print(after + mon5)
 
 if day == "Mon" and float(time) > 11.30 and float(time) < 11.51 :
     print(now + brk)
@@ -93,6 +96,7 @@ if day == "Mon" and float(time) > 11.50 and float(time) < 12.36 :
 if day == "Mon" and float(time) > 12.35 and float(time) < 13.26 :
     print(now + mon6)
     print(nxt + brk)
+    print(after + mon8)
 
 if day == "Mon" and float(time) > 13.25 and float(time) < 14.26 :
     print(now + brk)
@@ -118,6 +122,7 @@ if day == "Tue" and float(time) > 8.00 and float(time) < 8.51 :
 if day == "Tue" and float(time) > 8.50 and float(time) < 9.36 :
     print(now + tue2)
     print(nxt + brk)
+    print(after + tue3)
 
 if day == "Tue" and float(time) > 9.35 and float(time) < 9.56 :
     print(now + brk)
@@ -130,6 +135,7 @@ if day == "Tue" and float(time) > 9.55 and float(time) < 10.46 :
 if day == "Tue" and float(time) > 10.45 and float(time) < 11.31 :
     print(now + tue4)
     print(nxt + brk)
+    print(after + tue5)
 
 if day == "Tue" and float(time) > 11.30 and float(time) < 11.51 :
     print(now + brk)
@@ -142,6 +148,7 @@ if day == "Tue" and float(time) > 11.50 and float(time) < 12.36 :
 if day == "Tue" and float(time) > 12.35 and float(time) < 13.26 :
     print(now + tue5)
     print(nxt + brk)
+    print(after + tue7)
 
 if day == "Tue" and float(time) > 13.25 and float(time) < 13.41 :
     print(now + brk)
@@ -155,47 +162,50 @@ if day == "Tue" and float(time) > 14.24 and float(time) < 16.00 :
     print(now + over)
 
 #wednesday
-if day == "wed" and float(time) > 8.00 and float(time) < 8.51 :
+if day == "Wed" and float(time) > 8.00 and float(time) < 8.51 :
     print(now + over)
     print(nxt + wed2)
 
-if day == "wed" and float(time) > 8.50 and float(time) < 9.36 :
+if day == "Wed" and float(time) > 8.50 and float(time) < 9.36 :
     print(now + wed2)
     print(nxt + brk)
+    print(after + wed3)
 
 if day == "Wed" and float(time) > 9.35 and float(time) < 9.56 :
     print(now + brk)
     print(nxt + wed3)
 
-if day == "wed" and float(time) > 9.55 and float(time) < 10.46 :
+if day == "Wed" and float(time) > 9.55 and float(time) < 10.46 :
     print(now + wed3)
     print(nxt + wed4)
 
-if day == "wed" and float(time) > 10.45 and float(time) < 11.31 :
+if day == "Wed" and float(time) > 10.45 and float(time) < 11.31 :
     print(now + wed4)
     print(nxt + brk)
+    print(after + free)
 
-if day == "wed" and float(time) > 11.30 and float(time) < 11.51 :
+if day == "Wed" and float(time) > 11.30 and float(time) < 11.51 :
     print(now + brk)
     print(nxt + free)
 
-if day == "wed" and float(time) > 11.50 and float(time) < 12.36 :
+if day == "Wed" and float(time) > 11.50 and float(time) < 12.36 :
     print(now + free)
     print(nxt + wed6)
 
-if day == "wed" and float(time) > 12.35 and float(time) < 13.26 :
+if day == "Wed" and float(time) > 12.35 and float(time) < 13.26 :
     print(now + wed6)
     print(nxt + brk)
+    print(after + wed8)
 
-if day == "wed" and float(time) > 13.25 and float(time) < 14.26 :
+if day == "Wed" and float(time) > 13.25 and float(time) < 14.26 :
     print(now + brk)
     print(nxt + wed8)
 
-if day == "wed" and float(time) > 14.25 and float(time) < 15.16 :
+if day == "Wed" and float(time) > 14.25 and float(time) < 15.16 :
     print(now + wed8)
     print(nxt + wed9)
 
-if day == "wed" and float(time) > 15.15 and float(time) < 16.01 :
+if day == "Wed" and float(time) > 15.15 and float(time) < 16.01 :
     print(now + wed9)
     print(nxt + over)
 
@@ -211,6 +221,7 @@ if day == "Thu" and float(time) > 8.00 and float(time) < 8.51 :
 if day == "Thu" and float(time) > 8.50 and float(time) < 9.36 :
     print(now + thu2)
     print(nxt + brk)
+    print(after + thu3)
 
 if day == "Thu" and float(time) > 9.35 and float(time) < 9.56 :
     print(now + brk)
@@ -223,6 +234,7 @@ if day == "Thu" and float(time) > 9.55 and float(time) < 10.46 :
 if day == "Thu" and float(time) > 10.45 and float(time) < 11.31 :
     print(now + thu4)
     print(nxt + brk)
+    print(after + thu5)
 
 if day == "Thu" and float(time) > 11.30 and float(time) < 11.51 :
     print(now + brk)
@@ -235,6 +247,7 @@ if day == "Thu" and float(time) > 11.50 and float(time) < 12.36 :
 if day == "Thu" and float(time) > 12.35 and float(time) < 13.26 :
     print(now + thu6)
     print(nxt + brk)
+    print(after + thu8)
 
 if day == "Thu" and float(time) > 13.25 and float(time) < 14.26 :
     print(now + brk)
@@ -259,6 +272,7 @@ if day == "Fri" and float(time) > 8.00 and float(time) < 8.51 :
 if day == "Fri" and float(time) > 8.50 and float(time) < 9.36 :
     print(now + fri2)
     print(nxt + brk)
+    print(after + fri3)
 
 if day == "Fri" and float(time) > 9.35 and float(time) < 9.56 :
     print(now + brk)
@@ -271,6 +285,7 @@ if day == "Fri" and float(time) > 9.55 and float(time) < 10.46 :
 if day == "Fri" and float(time) > 10.45 and float(time) < 11.31 :
     print(now + fri4)
     print(nxt + brk)
+    print(after + fri5)
 
 if day == "Fri" and float(time) > 11.30 and float(time) < 11.51 :
     print(now + brk)
@@ -283,6 +298,7 @@ if day == "Fri" and float(time) > 11.50 and float(time) < 12.36 :
 if day == "Fri" and float(time) > 12.35 and float(time) < 13.26 :
     print(now + fri6)
     print(nxt + brk)
+    print(after + fri8)
 
 if day == "Fri" and float(time) > 13.25 and float(time) < 14.26 :
     print(now + brk)
